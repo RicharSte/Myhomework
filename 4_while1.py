@@ -11,10 +11,13 @@
 
 
 def ask_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
+      
+    while True:
+          # я использовал lower(), т.к. многие вводят ответ не с большой буквы
+          user_answer = input("How are you?: ").lower()
+          if user_answer == "good":
+                print("Nice!")
+                break
 
     
 if __name__ == "__main__":
